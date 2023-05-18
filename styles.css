@@ -1,0 +1,161 @@
+:root {
+    --primary-color: #137c4b;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: azure;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+section.questions {
+    height: 70%;
+    width: 70%;
+    margin: auto;
+}
+
+.questions .title {
+    height: 50px;
+    text-align: center;
+    margin: 20px auto;
+    width: 270px;
+}
+
+.title h2 {
+    height: 100%;
+    padding: 10px;
+    text-transform: capitalize;
+    font-size: 25px;
+    font-family: serif;
+    font-weight: 100;
+    font-style: italic;
+    color: var(--primary-color);
+    background-color: #9deac7;
+}
+
+/* questions */
+
+.section-center {
+    width: 90%;
+    margin: 50px auto;
+}
+
+article {
+    display: block;
+}
+
+article.question {
+    height: 120px;
+    box-shadow: 0 3px 10px var(--primary-color);
+    border-radius: 7px;
+    margin-bottom: 2rem;
+    padding: 1.5rem 1.5rem 0 1.5rem;
+}
+
+.question-title {
+    text-transform: capitalize;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* .button {
+    height: 5px;
+    width: 5px;
+}
+
+button {
+    width: 5px;
+    margin-bottom: 2px;
+    height: 5px;
+}
+
+.plus-icon, .minus-icon {
+    width: 5px;
+    height: 5px;
+} */
+
+.question-title {
+    height: 35px;
+}
+
+.question-title p {
+    font-weight: 600;
+}
+.button-container {
+    width: 12px;
+    height: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+}
+
+.button-container img {
+    width: 7px;
+    
+}
+
+.button-container button {
+    margin-right: 3px;
+    border: none;
+    align-items: center;
+    padding: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.question-text {
+    padding: 10px 0;
+    /* display: none; */
+}
+
+/* .show-text .question-text {
+    display: block;
+}
+
+.minus-icon {
+    display: none;
+}
+
+.show-text .minus-icon {
+    display: inline;
+}
+
+.show-text .plus-icon {
+    display: none;
+}
+
+.question-text p {
+    font-size: 14px;
+} */
+
+@media (max-width: 700px) {
+    article.question {
+    height: 55%;
+    padding: 1.5rem 1.5rem 0 1.5rem;
+}
+.question-text {
+    padding: 3% 0;
+}
+
+.question-text p {
+    font-size: 12px;
+}
+
+.question-title {
+    height: 15%;
+}
+
+.question-title p {
+    font-weight: 200;
+    font-size: 14px;
+}
+}
